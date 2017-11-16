@@ -98,6 +98,7 @@ main {
     width: 232px;
     height: 100vh;
     background-color: aliceblue;
+    z-index: 1;
 }
 
 .sidebar h3 {
@@ -329,19 +330,14 @@ header {
     margin-top: 32px;
     padding-bottom: 88px;
     list-style: none;
-
-    justify-content: space-between;
+    overflow: hidden;
 }
 
 .album-item {
     position: relative;
     margin-left: 16px;
-    min-width: 80px;
-    min-height: 80px;
-    max-width: 300px;
-    max-height: 300px;
-    width: 10vw;
-    height: 10vw;
+    min-width: 160px;
+    min-height: 160px;
     border-radius: 4px;
     background-color: antiquewhite;
     text-align: left;
