@@ -90,6 +90,8 @@ main {
   height: 100vh;
 }
 
+/* - Сайдбар Начало */
+
 .sidebar {
   position: fixed;
   width: 232px;
@@ -138,27 +140,27 @@ main {
 }
 
 .sidebar-menu a:nth-child(1) li::before {
-  background-image: url(/img/search-icon.svg);
+  background-image: url(../img/search-icon.svg);
 }
 
 .sidebar-menu a:nth-child(2) li::before {
-  background-image: url(/img/genres-icon.svg);
+  background-image: url(../img/genres-icon.svg);
 }
 
 .sidebar-menu a:nth-child(3) li::before {
-  background-image: url(/img/radio-icon.svg);
+  background-image: url(../img/radio-icon.svg);
 }
 
 .sidebar-menu a:nth-child(4) li::before {
-  background-image: url(/img/artist-icon.svg);
+  background-image: url(../img/artist-icon.svg);
 }
 
 .sidebar-menu a:nth-child(5) li::before {
-  background-image: url(/img/albums-icon.svg);
+  background-image: url(../img/albums-icon.svg);
 }
 
 .sidebar-menu a:nth-child(6) li::before {
-  background-image: url(/img/settings-icon.svg);
+  background-image: url(../img/settings-icon.svg);
 }
 
 .sidebar a.active li {
@@ -180,6 +182,8 @@ main {
 .sidebar-playlist {
   margin-top: 64px;
 }
+
+/* - Сайдбар Конец */
 
 .main {
   margin-left: 232px;
@@ -265,15 +269,6 @@ header {
 
 /* Поиск Конец */
 
-.player {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  width: calc(100% - 232px);
-  height: 104px;
-  background-color: rgba(240, 248, 255, 0.5);
-}
-
 .user-block {
   display: flex;
 
@@ -312,16 +307,25 @@ header {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-position: box-shadow: 0 5px 32px rgba(174, 178, 204, 0.5);
+  box-shadow: 0 5px 32px rgba(174, 178, 204, 0.5);
   transition: all 0.5s;
 }
 
 .user-block__user-img:hover {
-  padding-bottom: 8px;
+  padding-top: 8px;
   box-shadow: 0 10px 32px rgba(174, 178, 204, 0.7);
 }
 
 .albums {
   margin-top: 48px;
   padding: 0 56px;
+}
+
+.player {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: calc(100% - 232px);
+  height: 104px;
+  background-color: rgba(240, 248, 255, 0.5);
 }
