@@ -11,43 +11,72 @@
 <body>
   <main>
     <section class="sidebar">
-      <nav class="sidebar__menu">
+      <nav class="sidebar-menu">
         <h3>Menu</h3>
-        <a href="#">Explore</a>
-        <a href="#">Genres</a>
-        <a href="#">Radio</a>
-        <a href="#">Artists</a>
-        <a href="#">Albums</a>
-        <a href="#">Setting</a>
+        <ul>
+          <a href="#">
+            <li>Explore</li>
+          </a>
+          <a href="#">
+            <li>Genres</li>
+          </a>
+          <a href="#" class="active">
+            <li>Radio</li>
+          </a>
+          <a href="#">
+            <li>Artists</li>
+          </a>
+          <a href="#">
+            <li>Albums</li>
+          </a>
+          <a href="#">
+            <li>Settings</li>
+          </a>
+        </ul>
       </nav>
-      <nav class="sidebar__playlist">
+      <nav class="sidebar-playlist">
         <h3>Playlist</h3>
-        <a href="#">Liked</a>
-        <a href="#">Rap 2018</a>
-        <a href="#">Classic Music</a>
-        <a href="#">New Playlist</a>
+        <ul>
+          <a href="#">
+            <li>Liked</li>
+          </a>
+          <a href="#">
+            <li>Rap 2017</li>
+          </a>
+          <a href="#">
+            <li>Classic Music</li>
+          </a>
+          <a href="#">
+            <li>Albums</li>
+          </a>
+        </ul>
       </nav>
     </section>
     <section class="main">
-      <nav class="navigation">
+      <header>
         <div class="search">
-          <input type="text">
+          <button type="button"></button>
+          <input type="text" placeholder="Find and listen to your favorite music...">
         </div>
         <div class="user-block">
-          <div class="user-block__notification">not</div>
-          <div class="user-block__user-img">img</div>
+          <button type="button" class="user-block__notification">
+            <span class="quantity">3</span>
+          </button>
+          <a href="#">
+            <img src="/img/avatar.jpg" alt="" class="user-block__user-img">
+          </a>
         </div>
-      </nav>
+      </header>
       <section class="albums">
         <h2>Featured Albums</h2>
-        <button>Play</button>
+        <button type="button" class="btn">Play</button>
         <ul class="album-list">
-          <li class=".album-item">1</li>
-          <li class=".album-item">2</li>
-          <li class=".album-item">3</li>
-          <li class=".album-item">4</li>
-          <li class=".album-item">5</li>
-          <li class=".album-item">6</li>
+          <li class="album-item">1</li>
+          <li class="album-item">2</li>
+          <li class="album-item">3</li>
+          <li class="album-item">4</li>
+          <li class="album-item">5</li>
+          <li class="album-item">6</li>
         </ul>
       </section>
       <section class="change-music">
@@ -73,7 +102,11 @@
         </div>
       </section>
     </section>
-    article
+    <div class="player">
+      <div class="song-name">22</div>
+      <div class="player-ui">2</div>
+      <div class="value">3</div>
+    </div>
   </main>
 </body>
 
