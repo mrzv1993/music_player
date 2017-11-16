@@ -2,112 +2,128 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Music Player</title>
-  <link rel="stylesheet" href="css/main.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
 </head>
 
 <body>
-  <main>
-    <section class="sidebar">
-      <nav class="sidebar-menu">
-        <h3>Menu</h3>
-        <ul>
-          <a href="#">
-            <li>Explore</li>
-          </a>
-          <a href="#">
-            <li>Genres</li>
-          </a>
-          <a href="#" class="active">
-            <li>Radio</li>
-          </a>
-          <a href="#">
-            <li>Artists</li>
-          </a>
-          <a href="#">
-            <li>Albums</li>
-          </a>
-          <a href="#">
-            <li>Settings</li>
-          </a>
-        </ul>
-      </nav>
-      <nav class="sidebar-playlist">
-        <h3>Playlist</h3>
-        <ul>
-          <a href="#">
-            <li>Liked</li>
-          </a>
-          <a href="#">
-            <li>Rap 2017</li>
-          </a>
-          <a href="#">
-            <li>Classic Music</li>
-          </a>
-          <a href="#">
-            <li>Albums</li>
-          </a>
-        </ul>
-      </nav>
-    </section>
-    <section class="main">
-      <header>
-        <div class="search">
-          <button type="button"></button>
-          <input type="text" placeholder="Find and listen to your favorite music...">
-        </div>
-        <div class="user-block">
-          <button type="button" class="user-block__notification">
+    <main>
+        <section class="sidebar">
+            <nav class="sidebar-menu">
+                <h3>Menu</h3>
+                <ul>
+                    <a href="#">
+                        <li>Explore</li>
+                    </a>
+                    <a href="#">
+                        <li>Genres</li>
+                    </a>
+                    <a href="#" class="active">
+                        <li>Radio</li>
+                    </a>
+                    <a href="#">
+                        <li>Artists</li>
+                    </a>
+                    <a href="#">
+                        <li>Albums</li>
+                    </a>
+                    <a href="#">
+                        <li>Settings</li>
+                    </a>
+                </ul>
+            </nav>
+            <nav class="sidebar-playlist">
+                <h3>Playlist</h3>
+                <ul>
+                    <a href="#">
+                        <li>Liked</li>
+                    </a>
+                    <a href="#">
+                        <li>Rap 2017</li>
+                    </a>
+                    <a href="#">
+                        <li>Classic Music</li>
+                    </a>
+                    <a href="#">
+                        <li>Albums</li>
+                    </a>
+                </ul>
+            </nav>
+        </section>
+        <section class="main">
+            <header>
+                <div class="search">
+                    <button type="button"></button>
+                    <input type="text" placeholder="Find and listen to your favorite music...">
+                </div>
+                <div class="user-block">
+                    <button type="button" class="user-block__notification">
             <span class="quantity">3</span>
           </button>
-          <a href="#">
+                    <a href="#">
             <img src="/img/avatar.jpg" alt="" class="user-block__user-img">
           </a>
+                </div>
+            </header>
+            <section class="albums">
+                <h2>Featured Albums</h2>
+                <button type="button" class="btn">Play</button>
+                <ul class="album-list">
+                    <li class="album-item">
+                        <b><span class="name">Kesha —</span><br>Rainbow</b>
+                    </li>
+                    <li class="album-item">
+                        <b><span class="name">Наадя —</span><br>Осколки</b>
+                    </li>
+                    <li class="album-item">
+                        <b><span class="name">P!nk —</span><br>Beautiful Trauma</b>
+                    </li>
+                    <li class="album-item">
+                        <b><span class="name">источник —</span><br>Может правда всё закончится вот так</b>
+                    </li>
+                    <li class="album-item">
+                        <b><span class="name">Miley Cyrus —</span><br>Younger Now</b>
+                    </li>
+                    <li class="album-item">
+                        <b><span class="name">Сюзанна —</span><br>Та самая</b>
+                    </li>
+                </ul>
+            </section>
+            <section class="change-music">
+                <div class="daily-mix">
+                    <h2>Daily Mix</h2>
+                    <ul class="playlist-list">
+                        <li class="song-item">
+                            <img src="img/album-1.jpg" alt="" width="32" height="32">
+                            <span class="name">Name</span>
+                            <span class="name">Aasd</span>
+                        </li>
+                        <li class="song-item">2</li>
+                        <li class="song-item">3</li>
+                        <li class="song-item">4</li>
+                        <li class="song-item">5</li>
+                        <li class="song-item">6</li>
+                        <li class="song-item">7</li>
+                        <li class="song-item">8</li>
+                        <li class="song-item">9</li>
+                        <li class="song-item">10</li>
+                        <li class="song-item">11</li>
+                        <li class="song-item">12</li>
+                    </ul>
+                </div>
+                <div class="playlists">
+                    <h2>Playlist</h2>
+                </div>
+            </section>
+        </section>
+        <div class="player">
+            <div class="song-name">22</div>
+            <div class="player-ui">2</div>
+            <div class="value">3</div>
         </div>
-      </header>
-      <section class="albums">
-        <h2>Featured Albums</h2>
-        <button type="button" class="btn">Play</button>
-        <ul class="album-list">
-          <li class="album-item">1</li>
-          <li class="album-item">2</li>
-          <li class="album-item">3</li>
-          <li class="album-item">4</li>
-          <li class="album-item">5</li>
-          <li class="album-item">6</li>
-        </ul>
-      </section>
-      <section class="change-music">
-        <div class="change-music__daily-mix">
-          <h2>Daily Mix</h2>
-          <ul class="playlist-list">
-            <li class="song-item">1</li>
-            <li class="song-item">2</li>
-            <li class="song-item">3</li>
-            <li class="song-item">4</li>
-            <li class="song-item">5</li>
-            <li class="song-item">6</li>
-            <li class="song-item">7</li>
-            <li class="song-item">8</li>
-            <li class="song-item">9</li>
-            <li class="song-item">10</li>
-            <li class="song-item">11</li>
-            <li class="song-item">12</li>
-          </ul>
-        </div>
-        <div class="change-music__playlists">
-          <h2>Playlist</h2>
-        </div>
-      </section>
-    </section>
-    <div class="player">
-      <div class="song-name">22</div>
-      <div class="player-ui">2</div>
-      <div class="value">3</div>
-    </div>
-  </main>
+    </main>
 </body>
 
 </html>
