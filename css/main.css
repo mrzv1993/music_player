@@ -1,98 +1,107 @@
 * {
+<<<<<<< HEAD
     margin: 0;
     padding: 0;
     outline: 0;
     border: 0;
     border-radius: 0;
+=======
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+>>>>>>> parent of 0f30c1d... Albums
 }
 
 body {
-    background-color: #FFFFFF;
-    font-family: 'Open Sans', sans-serif;
+  background-color: #FFFFFF;
+  font-family: 'Open Sans', sans-serif;
 }
 
 button,
 h2 {
-    display: inline-block;
+  display: inline-block;
 }
 
 h2 {
-    color: #243d6f;
-    font-size: 18px;
+  color: #243d6f;
+  font-size: 18px;
 }
 
 h3 {
-    color: #9eabc2;
-    text-transform: uppercase;
-    font-size: 13px;
+  color: #9eabc2;
+  text-transform: uppercase;
+  font-size: 13px;
 }
 
 a {
-    display: block;
-    color: rgba(36, 61, 111, 1);
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 13px;
+  display: block;
+  color: rgba(36, 61, 111, 1);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 13px;
 }
 
 a:hover {
-    color: rgba(36, 61, 111, 1);
+  color: rgba(36, 61, 111, 1);
 }
 
 b {
-    color: #abb4c8;
-    font-weight: 500;
-    font-size: 12px;
+  color: #abb4c8;
+  font-weight: 500;
+  font-size: 12px;
 }
 
 .card {
-    width: 200px;
-    height: 200px;
-    background-color: #FFFFFF;
-    box-shadow: 0 0 32px #c3cbfe;
+  width: 200px;
+  height: 200px;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 32px #c3cbfe;
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .btn {
-    padding: 8px 16px;
-    outline: inherit;
-    border-radius: 24px;
-    background-image: linear-gradient(to right bottom, #667aff, #6b74f9, #706ef3, #7467ed, #7861e7);
-    box-shadow: 0 0 16px #c3cbfe;
-    color: #FFF;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 700;
+  padding: 8px 16px;
+  outline: inherit;
+  border-radius: 24px;
+  background-image: linear-gradient(to right bottom, #667aff, #6b74f9, #706ef3, #7467ed, #7861e7);
+  box-shadow: 0 0 16px #c3cbfe;
+  color: #FFF;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
 }
 
 .styleguide h2,
 .styleguide a,
 .styleguide b,
 .styleguide h3 {
-    display: block;
-    padding-top: inherit;
+  display: block;
+  padding-top: inherit;
 }
 
 .styleguide {
-    padding-top: 20px;
-    padding-left: 20px;
-    height: 400px;
-    background-color: aliceblue;
+  padding-top: 20px;
+  padding-left: 20px;
+  height: 400px;
+  background-color: aliceblue;
 }
 
 main {
-    display: flex;
-    min-width: 800px;
-    width: 100%;
-    height: 100vh;
+  display: flex;
+  min-width: 800px;
+  width: 100%;
+  height: 100vh;
 }
 
 /* - Сайдбар Начало */
 
 .sidebar {
+<<<<<<< HEAD
     position: fixed;
     width: 232px;
     height: 100vh;
@@ -102,221 +111,237 @@ main {
     width: 232px;
     height: 100vh;
     background-color: aliceblue;
+=======
+  position: fixed;
+  width: 232px;
+  height: 100vh;
+  background-color: aliceblue;
+>>>>>>> parent of 0f30c1d... Albums
 }
 
 .sidebar h3 {
-    margin-bottom: 24px;
-    padding-left: 32px;
+  margin-bottom: 24px;
+  padding-left: 32px;
 }
 
 .sidebar ul {
-    list-style: none;
+  list-style: none;
 }
 
 .sidebar li {
-    display: flex;
-    padding-left: 32px;
-    height: 40px;
-    line-height: 32px;
-    opacity: 0.5;
-    transition: all 0.2s;
+  display: flex;
+  padding-left: 32px;
+  height: 40px;
+  line-height: 32px;
+  opacity: 0.5;
+  transition: all 0.2s;
 
-    align-items: center;
+  align-items: center;
 }
 
 .sidebar a:hover {
-    background-color: rgba(220, 235, 248, 0.5);
+  background-color: rgba(220, 235, 248, 0.5);
 }
 
 .sidebar a:hover li {
-    margin-left: 4px;
-    opacity: 1;
+  margin-left: 4px;
+  opacity: 1;
 }
 
 .sidebar-menu li::before {
-    display: inline-block;
-    margin-right: 8px;
-    width: 24px;
-    height: 24px;
-    background-position: center;
-    background-size: 16px;
-    background-repeat: no-repeat;
-    content: "";
+  display: inline-block;
+  margin-right: 8px;
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-size: 16px;
+  background-repeat: no-repeat;
+  content: "";
 }
 
 .sidebar-menu a:nth-child(1) li::before {
-    background-image: url(../img/search-icon.svg);
+  background-image: url(../img/search-icon.svg);
 }
 
 .sidebar-menu a:nth-child(2) li::before {
-    background-image: url(../img/genres-icon.svg);
+  background-image: url(../img/genres-icon.svg);
 }
 
 .sidebar-menu a:nth-child(3) li::before {
-    background-image: url(../img/radio-icon.svg);
+  background-image: url(../img/radio-icon.svg);
 }
 
 .sidebar-menu a:nth-child(4) li::before {
-    background-image: url(../img/artist-icon.svg);
+  background-image: url(../img/artist-icon.svg);
 }
 
 .sidebar-menu a:nth-child(5) li::before {
-    background-image: url(../img/albums-icon.svg);
+  background-image: url(../img/albums-icon.svg);
 }
 
 .sidebar-menu a:nth-child(6) li::before {
-    background-image: url(../img/settings-icon.svg);
+  background-image: url(../img/settings-icon.svg);
 }
 
 .sidebar a.active li {
-    border-left: 4px solid #243d6f;
-    background-color: #dcebf8;
-    color: #243d6f;
-    opacity: 1;
+  border-left: 4px solid #243d6f;
+  background-color: #dcebf8;
+  color: #243d6f;
+  opacity: 1;
 }
 
 .sidebar a.active:hover li {
-    margin-left: 0;
-    opacity: 1;
+  margin-left: 0;
+  opacity: 1;
 }
 
 .sidebar-menu {
-    margin-top: 132px;
+  margin-top: 132px;
 }
 
 .sidebar-playlist {
-    margin-top: 64px;
+  margin-top: 64px;
 }
 
 /* - Сайдбар Конец */
 
 .main {
-    margin-left: 232px;
-    width: 100%;
+  margin-left: 232px;
+  width: 100%;
 }
 
 /* - Навигация Начало */
 
 header {
-    display: flex;
-    padding: 0 56px;
-    height: 80px;
-    background-color: #FFFFFF;
+  display: flex;
+  padding: 0 56px;
+  height: 80px;
+  background-color: #FFFFFF;
 
-    align-items: center;
-    justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* - - Поиск Начало */
 
 .search {
-    display: flex;
+  display: flex;
 
-    align-items: center;
+  align-items: center;
 }
 
 .search button {
-    display: inline-block;
-    margin-right: 8px;
-    width: 32px;
-    height: 32px;
-    background-image: url(../img/search-icon.svg);
-    background-position: center;
-    background-size: 20px;
-    background-repeat: no-repeat;
-    opacity: 1;
+  display: inline-block;
+  margin-right: 8px;
+  width: 32px;
+  height: 32px;
+  background-image: url(../img/search-icon.svg);
+  background-position: center;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  opacity: 1;
 }
 
 .search button:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 .search input {
+<<<<<<< HEAD
     padding: 16px 16px 16px 8px;
     width: 208px;
     color: #566686;
     font-weight: 500;
     font-size: 12px;
     transition: all 1s;
+=======
+  padding: 16px 16px 16px 8px;
+  width: 208px;
+  color: #566686;
+  font-weight: 500;
+  font-size: 12px;
+  transition: all 1s;
+>>>>>>> parent of 0f30c1d... Albums
 }
 
 .search input:focus {
-    background-color: aliceblue;
+  background-color: aliceblue;
 }
 
 .search input::-webkit-input-placeholder {
-    /* Chrome/Opera/Safari */
-    color: #a7b1c5;
-    font-weight: 500;
-    font-size: 11px;
+  /* Chrome/Opera/Safari */
+  color: #a7b1c5;
+  font-weight: 500;
+  font-size: 11px;
 }
 
 .search input::-moz-placeholder {
-    /* Firefox 19+ */
-    color: #a7b1c5;
-    font-weight: 500;
-    font-size: 11px;
+  /* Firefox 19+ */
+  color: #a7b1c5;
+  font-weight: 500;
+  font-size: 11px;
 }
 
 .search input:-ms-input-placeholder {
-    /* IE 10+ */
-    color: #a7b1c5;
-    font-weight: 500;
-    font-size: 11px;
+  /* IE 10+ */
+  color: #a7b1c5;
+  font-weight: 500;
+  font-size: 11px;
 }
 
 .search input:-moz-placeholder {
-    /* Firefox 18- */
-    color: #a7b1c5;
-    font-weight: 500;
-    font-size: 11px;
+  /* Firefox 18- */
+  color: #a7b1c5;
+  font-weight: 500;
+  font-size: 11px;
 }
 
 /* Поиск Конец */
 
 .user-block {
-    display: flex;
+  display: flex;
 
-    align-items: center;
+  align-items: center;
 }
 
 .user-block__notification {
-    position: relative;
-    display: inline-block;
-    margin-right: 16px;
-    width: 32px;
-    height: 32px;
-    background-image: url(../img/notification-icon.svg);
-    background-position: center;
-    background-size: 20px;
-    background-repeat: no-repeat;
+  position: relative;
+  display: inline-block;
+  margin-right: 16px;
+  width: 32px;
+  height: 32px;
+  background-image: url(../img/notification-icon.svg);
+  background-position: center;
+  background-size: 20px;
+  background-repeat: no-repeat;
 }
 
 .quantity {
-    position: absolute;
-    top: 2px;
-    left: 7px;
-    display: block;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: #fa2d66;
-    color: #FFF;
-    text-align: center;
-    font-size: 8px;
-    line-height: 12px;
+  position: absolute;
+  top: 2px;
+  left: 7px;
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #fa2d66;
+  color: #FFF;
+  text-align: center;
+  font-size: 8px;
+  line-height: 12px;
 }
 
 .user-block__user-img {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    box-shadow: 0 5px 32px rgba(174, 178, 204, 0.5);
-    transition: all 0.5s;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 5px 32px rgba(174, 178, 204, 0.5);
+  transition: all 0.5s;
 }
 
 .user-block__user-img:hover {
+<<<<<<< HEAD
     padding-top: 8px;
     box-shadow: 0 10px 32px rgba(174, 178, 204, 0.7);
 }
@@ -435,13 +460,22 @@ li.song-item:first-child {
     width: 128px;
     margin-top: 48px;
     padding: 0 56px;
+=======
+  padding-top: 8px;
+  box-shadow: 0 10px 32px rgba(174, 178, 204, 0.7);
+}
+
+.albums {
+  margin-top: 48px;
+  padding: 0 56px;
+>>>>>>> parent of 0f30c1d... Albums
 }
 
 .player {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    width: calc(100% - 232px);
-    height: 104px;
-    background-color: rgba(240, 248, 255, 0.5);
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: calc(100% - 232px);
+  height: 104px;
+  background-color: rgba(240, 248, 255, 0.5);
 }
