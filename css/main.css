@@ -1,5 +1,4 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
     outline: 0;
@@ -99,6 +98,10 @@ main {
     height: 100vh;
     background-color: aliceblue;
     z-index: 1;
+    =======position: fixed;
+    width: 232px;
+    height: 100vh;
+    background-color: aliceblue;
 }
 
 .sidebar h3 {
@@ -230,7 +233,7 @@ header {
 
 .search input {
     padding: 16px 16px 16px 8px;
-    width: 256px;
+    width: 208px;
     color: #566686;
     font-weight: 500;
     font-size: 12px;
@@ -269,7 +272,7 @@ header {
     font-size: 11px;
 }
 
-/* - - Поиск Конец */
+/* Поиск Конец */
 
 .user-block {
     display: flex;
@@ -314,11 +317,9 @@ header {
 }
 
 .user-block__user-img:hover {
-    padding-top: 4px;
+    padding-top: 8px;
     box-shadow: 0 10px 32px rgba(174, 178, 204, 0.7);
 }
-
-/* - Навигация Конец */
 
 .albums {
     margin-top: 48px;
@@ -432,6 +433,8 @@ li.song-item:first-child {
 
 .song-item .name {
     width: 128px;
+    margin-top: 48px;
+    padding: 0 56px;
 }
 
 .player {
