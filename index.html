@@ -46,8 +46,8 @@
                     <a href="#">
                         <li>Classic Music</li>
                     </a>
-                    <a href="#">
-                        <li>Albums</li>
+                    <a href="#" class="active">
+                        <li>New Playlist</li>
                     </a>
                 </ul>
             </nav>
@@ -63,13 +63,17 @@
             <span class="quantity">3</span>
           </button>
                     <a href="#">
-            <img src="/img/avatar.jpg" alt="" class="user-block__user-img">
+            <img src="../img/avatar.jpg" alt="" class="user-block__user-img">
           </a>
                 </div>
             </header>
             <section class="albums">
                 <h2>Featured Albums</h2>
-                <button type="button" class="btn">Play</button>
+                <img src="/img/play-button.svg" alt="" width="12" height="8">
+                <button type="button" class="btn">
+                <span>Play</span>
+                <img src="img/play-button.svg" alt="" width="12" class="img-btn">
+                </button>
                 <ul class="album-list">
                     <li class="album-item">
                         <b><span class="name">Kesha —</span><br>Rainbow</b>
@@ -212,7 +216,10 @@
                 <li class="player-btn"></li>
                 <li class="player-btn"></li>
             </ul>
-            <input type="range" class="value">
+            <div class="value-wrap">
+                <div class="icon-value"></div>
+                <input type="range" class="value">
+            </div>
         </div>
     </main>
 </body>

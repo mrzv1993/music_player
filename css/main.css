@@ -34,13 +34,14 @@ h2 {
 h3 {
     color: #9eabc2;
     text-transform: uppercase;
+    letter-spacing: 1px;
     font-size: 13px;
 }
 
 h4 {
     color: #243d6f;
-    font-size: 13px;
     font-weight: 600;
+    font-size: 13px;
     line-height: 1.5;
 }
 
@@ -67,12 +68,18 @@ b {
     padding: 8px 16px;
     outline: inherit;
     border-radius: 24px;
-    background-image: linear-gradient(to right bottom, #667aff, #6b74f9, #706ef3, #7467ed, #7861e7);
+    background-color: #667aff;
     box-shadow: 0 0 16px #c3cbfe;
     color: #FFF;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 700;
+}
+
+.img-btn {
+    display: inline-block;
+    margin-left: 4px;
+    vertical-align: middle;
 }
 
 .styleguide h2,
@@ -126,16 +133,17 @@ main {
     align-items: center;
 }
 
-.sidebar a:hover {
+.sidebar-menu a:hover {
     background-color: rgba(220, 235, 248, 0.5);
 }
 
-.sidebar a:hover li {
+.sidebar-menu a:hover li {
     margin-left: 4px;
     opacity: 1;
 }
 
-.sidebar-menu li::before {
+.sidebar-menu li::before,
+.sidebar-playlist li::before {
     display: inline-block;
     margin-right: 8px;
     width: 24px;
@@ -170,7 +178,7 @@ main {
     background-image: url(../img/settings-icon.svg);
 }
 
-.sidebar a.active li {
+.sidebar-menu a.active li {
     border-left: 4px solid #243d6f;
     background-color: #dcebf8;
     color: #243d6f;
@@ -189,6 +197,31 @@ main {
 .sidebar-playlist {
     margin-top: 64px;
 }
+
+.sidebar-playlist a.active li {
+    opacity: 1;
+}
+
+.sidebar-playlist a:hover li {
+    opacity: 1;
+}
+
+.sidebar-playlist a:nth-child(4):hover li {
+    font-weight: 600;
+}
+
+
+.sidebar-playlist a:nth-child(1) li::before,
+.sidebar-playlist a:nth-child(2) li::before,
+.sidebar-playlist a:nth-child(3) li::before {
+    background-image: url(../img/playlist-icon.svg);
+}
+
+.sidebar-playlist a:nth-child(4) li::before {
+    background-image: url(../img/plus.svg);
+    transform: rotate(45deg)
+}
+
 
 /* - Сайдбар Конец */
 
@@ -321,7 +354,6 @@ header {
 }
 
 .user-block__user-img:hover {
-    padding-top: 4px;
     box-shadow: 0 10px 32px rgba(174, 178, 204, 0.7);
 }
 
@@ -517,7 +549,7 @@ li.song-item:first-child {
 
 .player-btn {
     margin-left: 32px;
-    opacity: 0.9;
+    opacity: 0.8;
     cursor: pointer;
 }
 
@@ -545,9 +577,9 @@ li.song-item:first-child {
     height: 48px;
     border-radius: 50%;
     background-color: #8292fe;
-    background-image: url(../img/prev-btn.svg);
-    background-position: center;
-    background-size: 32px;
+    background-image: url(../img/play-button.svg);
+    background-position: right 14px center;
+    background-size: 16px;
     background-repeat: no-repeat;
 }
 
@@ -575,23 +607,23 @@ li.song-item:first-child {
 }
 
 .playlists {
-    width: 50%;
     padding-left: 56px;
+    width: 50%;
 }
 
 .playlist-items {
     display: flex;
+
     flex-wrap: wrap;
 }
 
 .playlist-item {
-    width: 40%;
-    height: 112px;
-    background-color: #FFFFFF;
     margin-left: 2vw;
-    border-radius: 8px;
-    box-shadow: 0 0px 48px rgba(165, 173, 226, 0.42);
     padding: 12px 16px;
+    width: 40%;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0px 48px rgba(165, 173, 226, 0.42);
 }
 
 .playlist-item:nth-child(1),
@@ -605,11 +637,11 @@ li.song-item:first-child {
 }
 
 .pl-item-circle {
+    margin-bottom: 24px;
     width: 24px;
     height: 24px;
-    background-color: #FFFFFF;
     border-radius: 50%;
-    margin-bottom: 24px;
+    background-color: #FFFFFF;
 }
 
 .circle-blue {
@@ -622,6 +654,7 @@ li.song-item:first-child {
 
 .pl-item-bottom {
     display: flex;
+
     justify-content: space-between;
     align-items: flex-end;
 }
@@ -630,8 +663,8 @@ li.song-item:first-child {
     width: 32px;
     height: 24px;
     background-position: center;
-    background-repeat: no-repeat;
     background-size: 16px;
+    background-repeat: no-repeat;
 }
 
 .arrow-blue {
@@ -642,6 +675,21 @@ li.song-item:first-child {
     background-image: url(../img/right-arrow-red.svg);
 }
 
+.value-wrap {
+    display: flex;
+
+    align-items: center;
+}
+
+.icon-value {
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/value-icon.svg);
+    background-position: center;
+    background-size: 16px;
+    background-repeat: no-repeat;
+}
 
 
 
